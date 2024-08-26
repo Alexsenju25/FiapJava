@@ -33,7 +33,7 @@ public class Equipe {
         this.integrantes = integrantes;
     }
 
-    public void listaEquioe() {
+    public void listaEquipe() {
         String exibe = "Nome da Equipe: " + nome;
         Collections.sort(integrantes);
         int cont = 1;

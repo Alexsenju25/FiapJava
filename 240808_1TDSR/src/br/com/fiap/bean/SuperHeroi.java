@@ -1,6 +1,8 @@
 package br.com.fiap.bean;
 
+import javax.swing.*;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class SuperHeroi {
     private String nome;
@@ -50,7 +52,20 @@ public class SuperHeroi {
         this.fraquezas = fraquezas;
     }
 
-    public void listaHeroi(){
-        String exibe
+    public void listaHeroi() {
+        String exibe = "Nome do Super-Herói: " + nome + "\nIdentidade Secreta: " + isSecreta;
+        exibe += "\nPoderes: ";
+        int cont = 1;
+        Collections.sort(poderes);
+        for (String i : poderes) {
+            exibe += "\nPoder"+ cont + ":" + i;
+            cont++;
+        }
+        Collections.sort(fraquezas);
+        for (String i : fraquezas) {
+            exibe += "\nFraqueza" + cont + ":" + i;
+            cont++;
+        }
+        JOptionPane.showMessageDialog(null, exibe);
     }
 }

@@ -20,7 +20,7 @@ public class UsaEquipe {
                 //integrantes.remove(integrantes.size() - 1);
                 integrantes.removeLast();
                 grupo = new Equipe(nome, integrantes);
-                grupo.listaEquioe();
+                grupo.listaEquipe();
                 integrantes.clear();
 
             } catch (Exception e){

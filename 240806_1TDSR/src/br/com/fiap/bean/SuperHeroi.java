@@ -51,12 +51,18 @@ public class SuperHeroi {
     }
 
     public void listaHeroi() {
-        String exibe = "Nome do Heroi" + nome + "/n";
+        String exibe = "Nome do Heroi: " + nome + "\n"
+                + "Identidade Secreta: " + idSecreta + "\n";
         int cont = 1;
-        for (int i = 0; i < idSecreta.length(); i++) {
+        for (String i : poderes) {
+            exibe += "\nPoder " + cont + ": " + i;
+            cont++;
+        }
+        for (String i : fraquezas) {
+            exibe += "\nFraqueza " + cont + ": " + i;
+            cont++;
         }
         JOptionPane.showMessageDialog(null, exibe);
-
 
     }
 
