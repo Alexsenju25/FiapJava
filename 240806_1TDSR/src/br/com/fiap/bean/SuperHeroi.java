@@ -54,7 +54,6 @@ public class SuperHeroi {
         String exibe = "Nome do Heroi" + nome + "/n";
         int cont = 1;
         for (int i = 0; i < idSecreta.length(); i++) {
-
         }
         JOptionPane.showMessageDialog(null, exibe);
 

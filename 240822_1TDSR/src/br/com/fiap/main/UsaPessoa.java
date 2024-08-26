@@ -33,6 +33,8 @@ public class UsaPessoa {
                         pessoa.setCodigo(codigo);
                         pessoa = pessoa.ler(path);
                         if (pessoa == null){
+                            JOptionPane.showMessageDialog(null, "Caminho não encontrado");
+                        } else {
                             JOptionPane.showMessageDialog(null, "Exibindo Dados"
                             + "\nCaminho:" + path
                             + "\nCódigo: " + pessoa.getCodigo()

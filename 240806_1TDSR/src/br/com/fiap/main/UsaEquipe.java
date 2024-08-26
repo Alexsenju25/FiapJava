@@ -20,7 +20,7 @@ public class UsaEquipe {
                 for (int i = 0; i < integrantes.length; i++) {
                     integrantes[i] = JOptionPane.showInputDialog("Integrante " + (i + 1) + ": ");
                 }
-                grupo = new Equipe(String nome, String[] integrantes);
+                grupo = new Equipe(integrantes, nome);
                 grupo.listaEquipe();
                 escolha = JOptionPane.showInputDialog(null, "Você deseja continuar?");
 
